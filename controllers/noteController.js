@@ -12,7 +12,7 @@ exports.getAllNote = async(req,res)=>{
 exports.createNote = async(req,res) =>{
     const {title, content, category} = req.body;
     if(!title || !content || !category){
-        res.status(402).json({message:"Fields must not be empty"})
+        res.status(402).json({message:"Fields must not be empty babawale"})
     }
     try {
         const note = new Note({user:req.user._id, title, content, category});
